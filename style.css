@@ -1,0 +1,90 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  min-width: 300px;
+  font: 11px/20px Arial, Helvetica, sans-serif;
+}
+
+.contents {
+  padding: 20px 10px 0;
+}
+
+.channel {
+  margin-bottom: 15px;
+  overflow: auto;
+}
+
+.channel_status {
+  width: 250px;
+  float: left;
+}
+
+.footer {
+  overflow: auto;
+  padding: 10px;
+  background: #ddc6ec;
+}
+
+.favicon {
+  width: 16px;
+  height: 16px;
+  margin: 0 4px;
+}
+
+#inactive .favicon {
+  -webkit-filter: grayscale(100%);
+  color: #888;
+}
+
+.title {
+  color: 8A2BE2;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+
+  width: 220px;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+#inactive .title {
+  cursor: default;
+  color: #888;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 10px;
+
+  padding-left: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.button {
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 1.0;
+}
+
+#trash {
+  float: right;
+  content:url(trash.png);
+}
+
+#reload {
+  float: right;
+  content:url(reload.png);
+}
+
