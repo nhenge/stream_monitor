@@ -2,7 +2,7 @@ function getTwitchStatus(channel, callback, retryCount) {
   var channelStatus = {
     active : false,
     channel_id : channel,
-    favicon_url : "http://g.etfv.co/http://www.twitch.tv",
+    favicon_url : "http://www.twitch.tv/favicon.ico",
   };
 
   if (channel.indexOf("twitch#") != 0) {
@@ -22,7 +22,7 @@ function getTwitchStatus(channel, callback, retryCount) {
 	  channelStatus = {
 	    active : true,
 	    channel_id : channel,
-	    favicon_url : "http://g.etfv.co/http://www.twitch.tv",
+	    favicon_url : "http://www.twitch.tv/favicon.ico",
 	    url : json.stream.channel.url,
 	    title : json.stream.channel.status,
 	    subtitle : (json.stream.channel.display_name
@@ -72,7 +72,7 @@ function pollChannels(channels) {
 
     if (activeItems > 0) {
       chrome.browserAction.setBadgeText({ text: activeItems.toString() });
-      chrome.browserAction.setBadgeBackgroundColor({ color: "#008800" });      
+      chrome.browserAction.setBadgeBackgroundColor({ color: "#008800" });
     } else {
       chrome.browserAction.setBadgeText({ text: "" });
     }
